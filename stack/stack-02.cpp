@@ -7,6 +7,9 @@ int main(){
 
     pilha.push(10);
     pilha.push(20);
+
+    //Verificar o tamanho stack na memória, com 2 elementos
+    std::cout << sizeof(pilha) << " bytes\n";
     
     std::cout << "Topo: " << pilha.top();
 
@@ -16,6 +19,8 @@ int main(){
         pilha.pop();
     }
     
-    //TODO: Verificar o tamanho real da stack na memória
+    //Verificar o tamanho stack vazia na memória
+    std::cout << sizeof(pilha) << " bytes\n";
+
     return 0;
 }
